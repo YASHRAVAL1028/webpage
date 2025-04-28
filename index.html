@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduAI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="popup">
+    <h1>CONTENT</h1>
+    <p>THE CONTENT YOU ARE TRYING TO ACCESS IS NOT AVAILABLE</p>
+    <button id="popbtn">DONE</button>
+</div>
+<div class="navbar">
+    <h1>EduAI</h1>
+</div>
+<div class="hero">
+    <div class="text">
+        <h1>Explore Generative AI Tools for Learning</h1>
+        <p>Boost your academic experience with smart AI powered education tools.</p>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <h1>AI NOTE SUMMARIZER</h1>
+            <p><span>Text</span></p>
+            <p>Automatically summarizes long lecture notes or articles into key points</p>
+            <button class="btn">More Info</button>
+        </div>
+        <div class="card">
+            <h1>Quiz Generator</h1>
+            <p><span id="2card" style="background-color: #F5C45E;">Assessment</span></p>
+            <p>Create MCQs or short answer quizzes from your study material</p>
+            <button class="btn">More Info</button>
+        </div>
+        <div class="card">
+            <h1>Essay Writer</h1>
+            <p><span id="3card" style="background-color: #60B5FF;">Writting</span></p>
+            <p>Generate academic essays with outlines reference and citations</p>
+            <button class="btn">More Info</button>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>@ 2025 EduAI Hub. Empowering with Generation Intelligence</p>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $(".btn").click(function(){
+            $(".popup").css("display","block")
+        })
+        $("#popbtn").click(function(){
+            $(".popup").css("display","none")
+        })
+
+    })
+</script>
+</html>
